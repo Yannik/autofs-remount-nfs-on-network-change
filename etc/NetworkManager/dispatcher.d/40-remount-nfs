@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# this runs as root! 
+# needs to be run on down too if new adapter is connected and old is disconnected afterwards
+if [ "$2" = "up" ] || [ "$2" = "down" ]; then
+  /usr/local/bin/remount_nfs.sh >> /tmp/yannik-test.log
+fi 
+
+
